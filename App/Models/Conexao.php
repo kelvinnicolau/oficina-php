@@ -5,7 +5,7 @@
         private $host = 'localhost';
         private $db_name = 'news';
         private $db_username = 'root';
-        private $db_password = 'root';
+        private $db_password = '';
 
         function __construct()
         {
