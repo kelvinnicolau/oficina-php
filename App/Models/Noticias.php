@@ -14,5 +14,14 @@
             $this->db->executar();
             return $this->db->converteResultado();
         }
+
+        public function getPeloId($id){
+            $sql = "SELECT noticias.*, categorias.name from $this->table INNER JOIN categorias ON categorias.id = noticias.categoria_id"; 
+            $sql .= " WHERE noticias.id = :id";
+            $this->db->montasql($sql);
+            $this->db->valoresSQL(['id' => $id]);
+            $this->db->executar();
+            return $this->db->converteResultado();
+        }
     }
 ?>

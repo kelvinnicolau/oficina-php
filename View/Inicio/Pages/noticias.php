@@ -8,7 +8,7 @@
                     <?php echo $item['titulo']; ?>
                 </h5>
                 <p class="card-text"><?php echo $item['assunto']; ?></p>
-                <a href="#" class="btn btn-primary">LEIA MAIS</a>
+                <a href="?a=detalhe&id=<?= $item['id'] ?>" class="btn btn-primary">LEIA MAIS</a>
             </div>
         </div>
     </div>

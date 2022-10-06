@@ -10,3 +10,9 @@ main{
 main .container .row .card{
     margin-top: 30px;
 }
+
+main .card-img-top{
+    width: 100%;
+    max-width: 290px;
+    height: 150px;
+}
