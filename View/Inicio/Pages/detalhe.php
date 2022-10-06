@@ -6,7 +6,8 @@
             <div class="card-body">
                 <h5 class="card-title"><?= $item['titulo'] ?></h5>
                 <h5 class="card-subtitle md-2 text-muted"><?= $item['reporter'] ?></h5>
-                <span class="badge badge-info"><?= $item['criado_em'] ?></span>
+                <span class="badge badge-info">Data: <?= date('d/m/Y', strtotime($item['criado_em'])) ?></span><br/>
+                <span class="badge badge-info">Hora: <?= date('H:i', strtotime($item['criado_em'])) ?></span>
                 <p class="card-text"><?= $item['assunto'] ?></p>
                 <p class="card-text"><?= $item['descricao'] ?></p>
             </div>
