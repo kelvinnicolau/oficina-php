@@ -1,8 +1,8 @@
 <div class="row">
    <?php foreach ($noticias as $item): ?>
-    <div class="col-12 col-md-4 col-sm-12">
+    <div id="cards" class="col-12 col-md-4 col-sm-12">
         <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="<?php echo $item['image_link']; ?>" alt="Card image cap">
+            <img class="card-img-top primary" src="<?php echo $item['image_link']; ?>" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">
                     <?php echo $item['titulo']; ?>
